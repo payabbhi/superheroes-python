@@ -1,0 +1,12 @@
+<h1 class="cover-heading">You've got {{ hero_name }} </h1>
+<h3>for ₹{{ payment.amount/100 }}</h3>
+<p class="lead"><img src="{{ hero_url }}"></p>
+<p class="lead">
+  Order ID is {{ merchant_order_id }}
+</p>
+<p class="lead">
+  Payment ID is {{ payment.id }}
+</p>
+<p class="lead">
+  <a href="/" class="btn btn-lg btn-default">Continue shopping</a>
+</p>

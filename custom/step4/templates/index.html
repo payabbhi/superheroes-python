@@ -1,0 +1,32 @@
+<html lang="en">
+  <head>
+    {% include "header.html" %}
+  </head>
+
+  <body>
+
+    <div class="site-wrapper">
+
+      <div class="site-wrapper-inner">
+
+        <div class="cover-container">
+          {% include "navbar.html" %}
+          <div class="inner cover">
+            {% if not error %}
+              {% include "payment.html" %}
+            {% else %}
+              {% include "failure.html" %}
+            {% endif %}
+          </div>
+
+          <div class="mastfoot"> <div class="inner"> </div> </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    {% include "footer.html" %}
+
+  </body>
+</html>
